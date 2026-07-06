@@ -1,100 +1,112 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6c1cd">
   <title>Convite Helena Carvalho</title>
-  <meta name="description" content="Clique para abrir o convite de Helena Carvalho" />
-  <meta property="og:title" content="Convite Helena Carvalho" />
-  <meta property="og:description" content="Clique para abrir o convite" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/preview.webp" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="assets/preview.webp" />
-  <meta name="theme-color" content="#f4b6c8" />
-  <link rel="preload" as="image" href="assets/opening.webp" fetchpriority="high" />
-  <script defer src="config.js"></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Convite Helena Carvalho">
+  <meta property="og:description" content="Clique para abrir o convite">
+  <meta property="og:url" content="https://convitepremium.github.io/convites-premium-Helena-Carvalho/">
+  <meta property="og:image" content="https://convitepremium.github.io/convites-premium-Helena-Carvalho/assets/preview-whatsapp.jpg">
+  <meta property="og:image:secure_url" content="https://convitepremium.github.io/convites-premium-Helena-Carvalho/assets/preview-whatsapp.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Convite Helena Carvalho">
+  <meta name="twitter:description" content="Clique para abrir o convite">
+  <meta name="twitter:image" content="https://convitepremium.github.io/convites-premium-Helena-Carvalho/assets/preview-whatsapp.jpg">
+
+  <link rel="preload" href="assets/opening.webp" as="image">
+  <link rel="preload" href="assets/video.mp4" as="video" type="video/mp4">
   <style>
-    :root{--bg:#12080e;--gold:#e4bd68;--glass:rgba(48,20,28,.42)}
-    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);font-family:Georgia,'Times New Roman',serif;color:#fff}body{touch-action:manipulation}.app{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle at center,#321824 0%,#12080e 68%)}.phone{position:relative;width:min(100vw,56.25vh);height:min(100vh,177.78vw);overflow:hidden;background:#000;isolation:isolate;box-shadow:0 0 40px rgba(0,0,0,.48)}.screen{position:absolute;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s ease;will-change:opacity}.screen.active{opacity:1;visibility:visible;pointer-events:auto}.art,.cover-img,.video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translateZ(0)}.cover{cursor:pointer;background:#000}.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(0,0,0,.08));pointer-events:none}.tap-hint{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 28px);transform:translateX(-50%);padding:.68rem 1.08rem;border:1px solid rgba(255,232,176,.62);border-radius:999px;background:var(--glass);box-shadow:0 0 22px rgba(255,190,95,.24);font:600 .78rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(6px);animation:pulse 1.85s infinite}.video{background:#000}.skip{position:absolute;right:13px;top:calc(env(safe-area-inset-top) + 13px);z-index:6;border:1px solid rgba(255,232,176,.8);background:rgba(45,18,25,.5);color:#fff;border-radius:999px;padding:.58rem .92rem;font:600 .82rem system-ui,sans-serif;backdrop-filter:blur(7px)}.hotspot{position:absolute;z-index:7;border:0;background:transparent;cursor:pointer;border-radius:24%;font-size:0;color:transparent}.debug .hotspot{outline:2px dashed #00e5ff;background:rgba(0,229,255,.18)}.back{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 18px);transform:translateX(-50%);z-index:7;border:1px solid rgba(255,231,180,.85);border-radius:999px;padding:.72rem 1.28rem;background:rgba(67,28,34,.56);box-shadow:0 8px 26px rgba(0,0,0,.24);color:#fff;font:700 .9rem system-ui,sans-serif;backdrop-filter:blur(7px)}.loader{position:absolute;inset:0;display:grid;place-items:center;background:#140810;z-index:40;transition:opacity .25s ease}.loader.hide{opacity:0;pointer-events:none}.spinner{width:38px;height:38px;border-radius:50%;border:3px solid rgba(255,255,255,.22);border-top-color:var(--gold);animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{transform:translateX(-50%) scale(1.045);box-shadow:0 0 30px rgba(255,190,95,.42)}}@media (min-aspect-ratio:9/16){.phone{border-radius:18px}}@media (prefers-reduced-motion:reduce){.screen,.tap-hint,.spinner{transition:none;animation:none}}
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+    .screen{position:fixed;inset:0;display:none;background:#000;align-items:center;justify-content:center;overflow:hidden}
+    .screen.active{display:flex}
+    .art{width:100%;height:100%;object-fit:cover;display:block;user-select:none;-webkit-user-drag:none}
+    #opening{cursor:pointer}
+    #videoPlayer{width:100%;height:100%;object-fit:cover;background:#000}
+    .hotspot{position:absolute;border:0;background:transparent;cursor:pointer;z-index:5}
+    .back{position:absolute;top:calc(env(safe-area-inset-top) + 14px);left:14px;z-index:10;border:0;border-radius:999px;padding:10px 14px;background:rgba(255,255,255,.76);color:#6b3a21;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+    body.debug .hotspot{background:rgba(255,0,0,.22);outline:2px solid rgba(255,0,0,.65)}
+    .loading{position:absolute;bottom:28px;left:0;right:0;text-align:center;color:#fff;text-shadow:0 2px 8px #000;font-size:14px;opacity:.85}
   </style>
 </head>
 <body>
-  <main class="app" aria-label="Convite digital Helena Carvalho">
-    <section class="phone" id="phone">
-      <div class="loader" id="loader"><div class="spinner" aria-label="Carregando"></div></div>
+  <main>
+    <section id="opening" class="screen active" aria-label="Abrir convite">
+      <img class="art" src="assets/opening.webp" alt="Clique para abrir o convite" width="720" height="1280">
+      <div class="loading">Toque na tela para abrir</div>
+    </section>
 
-      <section class="screen cover active" id="cover" aria-label="Abrir convite">
-        <img class="cover-img" id="openingImg" src="assets/opening.webp" alt="Clique para abrir o convite de Helena Carvalho" width="720" height="1280" decoding="async" fetchpriority="high">
-        <div class="tap-hint">Toque para abrir</div>
-      </section>
+    <section id="videoScreen" class="screen" aria-label="Vídeo do convite">
+      <video id="videoPlayer" src="assets/video.mp4" preload="metadata" playsinline webkit-playsinline></video>
+    </section>
 
-      <section class="screen" id="videoScreen" aria-label="Vídeo do convite">
-        <video class="video" id="introVideo" playsinline preload="metadata" poster="assets/opening.webp"></video>
-        <button class="skip" id="skipVideo" type="button">Pular</button>
-      </section>
+    <section id="mainScreen" class="screen" aria-label="Convite principal">
+      <img class="art" src="assets/principal.webp" alt="Convite Helena Carvalho" loading="eager" width="720" height="1280">
+      <button class="hotspot" id="confirmBtn" aria-label="Confirmar presença" style="left:20%;top:67%;width:19%;height:11%"></button>
+      <button class="hotspot" id="mapBtn" aria-label="Abrir localização" style="left:41%;top:67%;width:18%;height:11%"></button>
+      <button class="hotspot" id="giftBtn" aria-label="Ver sugestões de presentes" style="left:61%;top:67%;width:21%;height:11%"></button>
+    </section>
 
-      <section class="screen" id="invite" aria-label="Informações do convite">
-        <img class="art" id="principalImg" data-src="assets/principal.webp" alt="Convite Helena Carvalho" width="720" height="1280" decoding="async">
-        <button class="hotspot" id="confirmBtn" type="button" aria-label="Confirmar presença">Confirmar presença</button>
-        <button class="hotspot" id="mapBtn" type="button" aria-label="Abrir localização">Localização</button>
-        <button class="hotspot" id="giftsBtn" type="button" aria-label="Ver sugestões de presentes">Sugestões de presentes</button>
-      </section>
-
-      <section class="screen" id="gifts" aria-label="Sugestões de presentes">
-        <img class="art" id="presentesImg" data-src="assets/presentes.webp" alt="Sugestões de presentes" width="720" height="1280" decoding="async">
-        <button class="back" id="backBtn" type="button">Voltar ao convite</button>
-      </section>
-
-      <audio id="music" preload="none" loop></audio>
+    <section id="giftScreen" class="screen" aria-label="Sugestões de presentes">
+      <img class="art" src="assets/presentes.webp" alt="Sugestões de presentes" loading="lazy" width="720" height="1280">
+      <button class="back" id="backBtn">Voltar</button>
     </section>
   </main>
 
+  <audio id="music" src="assets/musica.mp3" preload="auto" loop></audio>
+
   <script>
-    window.addEventListener('DOMContentLoaded',()=>{
-      const C=window.CONVITE_CONFIG;
-      const $=id=>document.getElementById(id);
-      const screens=document.querySelectorAll('.screen');
-      const phone=$('phone'), loader=$('loader'), cover=$('cover'), videoScreen=$('videoScreen'), invite=$('invite'), gifts=$('gifts');
-      const video=$('introVideo'), music=$('music');
-      let videoPrepared=false, musicPrepared=false;
+    const WHATSAPP = '5521970054320';
+    const MAPS = 'https://www.google.com/maps/@-22.7411985,-43.4468781,3a,75y,26.88h,90t/data=!3m7!1e1!3m5!1sZ79AvjSGWrHFnnQymhQRRA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DZ79AvjSGWrHFnnQymhQRRA%26yaw%3D26.88!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D';
+    const MESSAGE = 'Olá! Confirmo minha presença no aniversário da Helena Carvalho.';
 
-      if(location.search.includes('debug=1')) phone.classList.add('debug');
+    const $ = (id)=>document.getElementById(id);
+    const screens = ['opening','videoScreen','mainScreen','giftScreen'].map($);
+    const video = $('videoPlayer');
+    const music = $('music');
 
-      function show(el){ screens.forEach(s=>s.classList.remove('active')); el.classList.add('active'); }
-      function loadImg(id){ const img=$(id); if(img && !img.getAttribute('src')) img.src=img.dataset.src; }
-      function setHotspot(id, h){ Object.assign($(id).style,{left:h.left+'%',top:h.top+'%',width:h.width+'%',height:h.height+'%'}); }
-      function setHotspots(){ setHotspot('confirmBtn',C.hotspots.confirm); setHotspot('mapBtn',C.hotspots.location); setHotspot('giftsBtn',C.hotspots.gifts); }
-      function prepareVideo(){ if(videoPrepared) return; video.src=C.assets.video; video.volume=C.videoVolume ?? 1; video.load(); videoPrepared=true; }
-      function prepareMusic(){ if(musicPrepared) return; music.src=C.assets.music; music.load(); musicPrepared=true; }
-      function fadeMusic(){
-        prepareMusic();
-        const target=C.musicVolume ?? .3;
-        music.volume=0;
-        music.play().then(()=>{
-          let v=0;
-          const t=setInterval(()=>{ v=Math.min(target,v+.025); music.volume=v; if(v>=target) clearInterval(t); },120);
-        }).catch(()=>{});
-      }
-      function openInvite(){ loadImg('principalImg'); show(invite); fadeMusic(); }
-      function start(){ prepareVideo(); loadImg('principalImg'); fadeMusic(); show(videoScreen); video.currentTime=0; video.play().catch(openInvite); }
-      function confirmPresence(){ const msg=encodeURIComponent(C.whatsappMessage); window.open(`https://wa.me/${C.whatsappNumber}?text=${msg}`,'_blank','noopener'); }
+    if (new URLSearchParams(location.search).has('debug')) document.body.classList.add('debug');
 
-      cover.addEventListener('click',start,{once:true});
-      $('skipVideo').addEventListener('click',openInvite);
-      video.addEventListener('ended',openInvite);
-      $('confirmBtn').addEventListener('click',confirmPresence);
-      $('mapBtn').addEventListener('click',()=>window.open(C.mapsUrl,'_blank','noopener'));
-      $('giftsBtn').addEventListener('click',()=>{ loadImg('presentesImg'); show(gifts); });
-      $('backBtn').addEventListener('click',()=>show(invite));
+    function show(id){
+      screens.forEach(s=>s.classList.remove('active'));
+      $(id).classList.add('active');
+    }
 
-      setHotspots();
-      window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hide'),280));
-      const idle=window.requestIdleCallback || (fn=>setTimeout(fn,900));
-      idle(()=>{ prepareVideo(); prepareMusic(); });
+    function startMusic(){
+      music.volume = 0;
+      const playPromise = music.play();
+      if (playPromise && playPromise.catch) playPromise.catch(()=>{});
+      let v = 0;
+      const fade = setInterval(()=>{
+        v = Math.min(0.30, v + 0.03);
+        music.volume = v;
+        if (v >= 0.30) clearInterval(fade);
+      }, 120);
+    }
+
+    $('opening').addEventListener('click', async ()=>{
+      show('videoScreen');
+      startMusic();
+      video.volume = 1;
+      try { await video.play(); } catch(e) { show('mainScreen'); }
+    }, {once:true});
+
+    video.addEventListener('ended', ()=> show('mainScreen'));
+    video.addEventListener('error', ()=> show('mainScreen'));
+
+    $('confirmBtn').addEventListener('click', ()=>{
+      window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MESSAGE)}`, '_blank');
     });
+    $('mapBtn').addEventListener('click', ()=> window.open(MAPS, '_blank'));
+    $('giftBtn').addEventListener('click', ()=> show('giftScreen'));
+    $('backBtn').addEventListener('click', ()=> show('mainScreen'));
   </script>
 </body>
 </html>
