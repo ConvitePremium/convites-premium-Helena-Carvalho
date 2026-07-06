@@ -4,60 +4,97 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Convite Helena Carvalho</title>
-  <meta name="description" content="Convite digital Helena Carvalho - 1 aninho" />
+  <meta name="description" content="Clique para abrir o convite de Helena Carvalho" />
   <meta property="og:title" content="Convite Helena Carvalho" />
   <meta property="og:description" content="Clique para abrir o convite" />
-  <meta property="og:image" content="assets/preview.webp" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/preview.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/preview.webp" />
   <meta name="theme-color" content="#f4b6c8" />
-  <link rel="preload" as="image" href="assets/preview.webp" fetchpriority="high" />
-  <link rel="preload" as="video" href="assets/video.mp4" />
-  <script src="config.js"></script>
+  <link rel="preload" as="image" href="assets/opening.webp" fetchpriority="high" />
+  <script defer src="config.js"></script>
   <style>
-    :root{--gold:#d7a34d;--pink:#f6c0d1;--shadow:rgba(0,0,0,.45)}
-    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;height:100%;overflow:hidden;background:#12080e;font-family:Georgia,'Times New Roman',serif;color:#fff}body{touch-action:manipulation}.app{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle,#2b1420,#12080e 65%)}.phone{position:relative;width:min(100vw,56.28vh);height:min(100vh,177.69vw);overflow:hidden;background:#000;box-shadow:0 0 40px rgba(0,0,0,.55);isolation:isolate}.screen{position:absolute;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .38s ease;will-change:opacity}.screen.active{opacity:1;visibility:visible;pointer-events:auto}.art,.cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translateZ(0)}.cover{cursor:pointer}.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.07));pointer-events:none}.pulse{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);padding:.65rem 1.1rem;border:1px solid rgba(255,230,170,.55);border-radius:999px;background:rgba(64,28,35,.38);box-shadow:0 0 20px rgba(255,190,95,.25);font-size:.83rem;letter-spacing:.04em;text-transform:uppercase;backdrop-filter:blur(5px);animation:pulse 1.8s infinite}.video{width:100%;height:100%;object-fit:cover;background:#000}.skip{position:absolute;right:14px;top:calc(env(safe-area-inset-top) + 14px);z-index:4;border:1px solid rgba(255,232,176,.75);background:rgba(45,18,25,.45);color:#fff;border-radius:999px;padding:.55rem .9rem;font-size:.82rem;backdrop-filter:blur(6px)}.hotspot{position:absolute;z-index:5;border:0;background:transparent;cursor:pointer;border-radius:30%;font-size:0;color:transparent}.debug .hotspot{outline:2px dashed #00e5ff;background:rgba(0,229,255,.16)}.back{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 18px);transform:translateX(-50%);z-index:7;border:1px solid rgba(255,231,180,.8);border-radius:999px;padding:.7rem 1.3rem;background:rgba(67,28,34,.55);box-shadow:0 8px 26px rgba(0,0,0,.24);color:#fff;font:600 .9rem system-ui,sans-serif;backdrop-filter:blur(7px)}.loader{position:absolute;inset:0;display:grid;place-items:center;background:#140810;z-index:30;transition:opacity .28s}.loader.hide{opacity:0;pointer-events:none}.spinner{width:38px;height:38px;border-radius:50%;border:3px solid rgba(255,255,255,.25);border-top-color:#f6d58a;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{transform:translateX(-50%) scale(1.04);box-shadow:0 0 30px rgba(255,190,95,.42)}}@media (min-aspect-ratio:9/16){.phone{border-radius:18px}}@media (prefers-reduced-motion:reduce){.screen,.pulse{transition:none;animation:none}}
+    :root{--bg:#12080e;--gold:#e4bd68;--glass:rgba(48,20,28,.42)}
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);font-family:Georgia,'Times New Roman',serif;color:#fff}body{touch-action:manipulation}.app{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle at center,#321824 0%,#12080e 68%)}.phone{position:relative;width:min(100vw,56.25vh);height:min(100vh,177.78vw);overflow:hidden;background:#000;isolation:isolate;box-shadow:0 0 40px rgba(0,0,0,.48)}.screen{position:absolute;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s ease;will-change:opacity}.screen.active{opacity:1;visibility:visible;pointer-events:auto}.art,.cover-img,.video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translateZ(0)}.cover{cursor:pointer;background:#000}.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(0,0,0,.08));pointer-events:none}.tap-hint{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 28px);transform:translateX(-50%);padding:.68rem 1.08rem;border:1px solid rgba(255,232,176,.62);border-radius:999px;background:var(--glass);box-shadow:0 0 22px rgba(255,190,95,.24);font:600 .78rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(6px);animation:pulse 1.85s infinite}.video{background:#000}.skip{position:absolute;right:13px;top:calc(env(safe-area-inset-top) + 13px);z-index:6;border:1px solid rgba(255,232,176,.8);background:rgba(45,18,25,.5);color:#fff;border-radius:999px;padding:.58rem .92rem;font:600 .82rem system-ui,sans-serif;backdrop-filter:blur(7px)}.hotspot{position:absolute;z-index:7;border:0;background:transparent;cursor:pointer;border-radius:24%;font-size:0;color:transparent}.debug .hotspot{outline:2px dashed #00e5ff;background:rgba(0,229,255,.18)}.back{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 18px);transform:translateX(-50%);z-index:7;border:1px solid rgba(255,231,180,.85);border-radius:999px;padding:.72rem 1.28rem;background:rgba(67,28,34,.56);box-shadow:0 8px 26px rgba(0,0,0,.24);color:#fff;font:700 .9rem system-ui,sans-serif;backdrop-filter:blur(7px)}.loader{position:absolute;inset:0;display:grid;place-items:center;background:#140810;z-index:40;transition:opacity .25s ease}.loader.hide{opacity:0;pointer-events:none}.spinner{width:38px;height:38px;border-radius:50%;border:3px solid rgba(255,255,255,.22);border-top-color:var(--gold);animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{transform:translateX(-50%) scale(1.045);box-shadow:0 0 30px rgba(255,190,95,.42)}}@media (min-aspect-ratio:9/16){.phone{border-radius:18px}}@media (prefers-reduced-motion:reduce){.screen,.tap-hint,.spinner{transition:none;animation:none}}
   </style>
 </head>
 <body>
   <main class="app" aria-label="Convite digital Helena Carvalho">
     <section class="phone" id="phone">
       <div class="loader" id="loader"><div class="spinner" aria-label="Carregando"></div></div>
+
       <section class="screen cover active" id="cover" aria-label="Abrir convite">
-        <img class="cover-img" src="assets/preview.webp" alt="Clique para abrir o convite de Helena Carvalho" width="941" height="1672" decoding="async" fetchpriority="high">
-        <div class="pulse">Toque para abrir</div>
+        <img class="cover-img" id="openingImg" src="assets/opening.webp" alt="Clique para abrir o convite de Helena Carvalho" width="720" height="1280" decoding="async" fetchpriority="high">
+        <div class="tap-hint">Toque para abrir</div>
       </section>
+
       <section class="screen" id="videoScreen" aria-label="Vídeo do convite">
-        <video class="video" id="introVideo" playsinline preload="metadata" poster="assets/preview.webp"></video>
+        <video class="video" id="introVideo" playsinline preload="metadata" poster="assets/opening.webp"></video>
         <button class="skip" id="skipVideo" type="button">Pular</button>
       </section>
+
       <section class="screen" id="invite" aria-label="Informações do convite">
-        <img class="art" id="principalImg" data-src="assets/principal.webp" alt="Convite Helena Carvalho" width="941" height="1672" decoding="async">
+        <img class="art" id="principalImg" data-src="assets/principal.webp" alt="Convite Helena Carvalho" width="720" height="1280" decoding="async">
         <button class="hotspot" id="confirmBtn" type="button" aria-label="Confirmar presença">Confirmar presença</button>
         <button class="hotspot" id="mapBtn" type="button" aria-label="Abrir localização">Localização</button>
         <button class="hotspot" id="giftsBtn" type="button" aria-label="Ver sugestões de presentes">Sugestões de presentes</button>
       </section>
+
       <section class="screen" id="gifts" aria-label="Sugestões de presentes">
-        <img class="art" id="presentesImg" data-src="assets/presentes.webp" alt="Sugestões de presentes" width="941" height="1672" decoding="async">
+        <img class="art" id="presentesImg" data-src="assets/presentes.webp" alt="Sugestões de presentes" width="720" height="1280" decoding="async">
         <button class="back" id="backBtn" type="button">Voltar ao convite</button>
       </section>
+
       <audio id="music" preload="none" loop></audio>
     </section>
   </main>
+
   <script>
-    (()=>{const C=window.CONVITE_CONFIG;const $=id=>document.getElementById(id);const phone=$('phone'),cover=$('cover'),videoScreen=$('videoScreen'),invite=$('invite'),gifts=$('gifts'),video=$('introVideo'),music=$('music'),loader=$('loader');let musicReady=false,videoReady=false;
+    window.addEventListener('DOMContentLoaded',()=>{
+      const C=window.CONVITE_CONFIG;
+      const $=id=>document.getElementById(id);
+      const screens=document.querySelectorAll('.screen');
+      const phone=$('phone'), loader=$('loader'), cover=$('cover'), videoScreen=$('videoScreen'), invite=$('invite'), gifts=$('gifts');
+      const video=$('introVideo'), music=$('music');
+      let videoPrepared=false, musicPrepared=false;
+
       if(location.search.includes('debug=1')) phone.classList.add('debug');
-      const show=el=>{document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));el.classList.add('active')};
-      const loadImg=img=>{if(img && !img.src) img.src=img.dataset.src};
-      const setHotspots=()=>{for(const [k,v] of Object.entries(C.hotspots)){const id={confirm:'confirmBtn',location:'mapBtn',gifts:'giftsBtn'}[k],b=$(id);if(b)Object.assign(b.style,{left:v.left+'%',top:v.top+'%',width:v.width+'%',height:v.height+'%'})}};
-      const prepVideo=()=>{if(videoReady)return; video.src=C.assets.video; video.load(); videoReady=true};
-      const prepMusic=()=>{if(musicReady)return; music.src=C.assets.music; music.load(); musicReady=true};
-      const fadeMusic=()=>{prepMusic(); music.volume=0; music.play().then(()=>{let v=0; const target=C.musicVolume||.3; const timer=setInterval(()=>{v=Math.min(target,v+.025); music.volume=v; if(v>=target)clearInterval(timer)},120)}).catch(()=>{})};
-      const openInvite=()=>{loadImg($('principalImg')); loadImg($('presentesImg')); show(invite); fadeMusic()};
-      const start=()=>{prepVideo(); fadeMusic(); show(videoScreen); video.play().catch(openInvite)};
-      const confirm=()=>{const msg=encodeURIComponent(C.whatsappMessage); open(`https://wa.me/${C.whatsappNumber}?text=${msg}`,'_blank','noopener')};
-      cover.addEventListener('click',start,{once:true});$('skipVideo').onclick=openInvite;video.addEventListener('ended',openInvite);$('confirmBtn').onclick=confirm;$('mapBtn').onclick=()=>open(C.mapsUrl,'_blank','noopener');$('giftsBtn').onclick=()=>{loadImg($('presentesImg'));show(gifts)};$('backBtn').onclick=()=>show(invite);
-      setHotspots(); requestIdleCallback?.(()=>{prepVideo();prepMusic();loadImg($('principalImg'))}); window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hide'),350));
-    })();
+
+      function show(el){ screens.forEach(s=>s.classList.remove('active')); el.classList.add('active'); }
+      function loadImg(id){ const img=$(id); if(img && !img.getAttribute('src')) img.src=img.dataset.src; }
+      function setHotspot(id, h){ Object.assign($(id).style,{left:h.left+'%',top:h.top+'%',width:h.width+'%',height:h.height+'%'}); }
+      function setHotspots(){ setHotspot('confirmBtn',C.hotspots.confirm); setHotspot('mapBtn',C.hotspots.location); setHotspot('giftsBtn',C.hotspots.gifts); }
+      function prepareVideo(){ if(videoPrepared) return; video.src=C.assets.video; video.volume=C.videoVolume ?? 1; video.load(); videoPrepared=true; }
+      function prepareMusic(){ if(musicPrepared) return; music.src=C.assets.music; music.load(); musicPrepared=true; }
+      function fadeMusic(){
+        prepareMusic();
+        const target=C.musicVolume ?? .3;
+        music.volume=0;
+        music.play().then(()=>{
+          let v=0;
+          const t=setInterval(()=>{ v=Math.min(target,v+.025); music.volume=v; if(v>=target) clearInterval(t); },120);
+        }).catch(()=>{});
+      }
+      function openInvite(){ loadImg('principalImg'); show(invite); fadeMusic(); }
+      function start(){ prepareVideo(); loadImg('principalImg'); fadeMusic(); show(videoScreen); video.currentTime=0; video.play().catch(openInvite); }
+      function confirmPresence(){ const msg=encodeURIComponent(C.whatsappMessage); window.open(`https://wa.me/${C.whatsappNumber}?text=${msg}`,'_blank','noopener'); }
+
+      cover.addEventListener('click',start,{once:true});
+      $('skipVideo').addEventListener('click',openInvite);
+      video.addEventListener('ended',openInvite);
+      $('confirmBtn').addEventListener('click',confirmPresence);
+      $('mapBtn').addEventListener('click',()=>window.open(C.mapsUrl,'_blank','noopener'));
+      $('giftsBtn').addEventListener('click',()=>{ loadImg('presentesImg'); show(gifts); });
+      $('backBtn').addEventListener('click',()=>show(invite));
+
+      setHotspots();
+      window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hide'),280));
+      const idle=window.requestIdleCallback || (fn=>setTimeout(fn,900));
+      idle(()=>{ prepareVideo(); prepareMusic(); });
+    });
   </script>
 </body>
 </html>
