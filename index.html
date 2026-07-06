@@ -27,11 +27,16 @@
     html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
     .screen{position:fixed;inset:0;display:none;background:#000;align-items:center;justify-content:center;overflow:hidden}
     .screen.active{display:flex}
-    .art{width:100%;height:100%;object-fit:cover;display:block;user-select:none;-webkit-user-drag:none}
-    #opening{cursor:pointer}
-    #videoPlayer{width:100%;height:100%;object-fit:cover;background:#000}
+    .screen::before{content:"";position:absolute;inset:-24px;background:var(--bg-img) center/cover no-repeat;filter:blur(18px);transform:scale(1.08);opacity:.55}
+    .art{position:relative;width:100%;height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none;z-index:1}
+    #opening{cursor:pointer;--bg-img:url('assets/opening.webp')}
+    #mainScreen{--bg-img:url('assets/principal.webp')}
+    #giftScreen{--bg-img:url('assets/presentes.webp')}
+    #videoScreen{--bg-img:url('assets/principal.webp')}
+    #videoPlayer{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;background:#000}
     .hotspot{position:absolute;border:0;background:transparent;cursor:pointer;z-index:5}
     .back{position:absolute;top:calc(env(safe-area-inset-top) + 14px);left:14px;z-index:10;border:0;border-radius:999px;padding:10px 14px;background:rgba(255,255,255,.76);color:#6b3a21;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+    .skip{position:absolute;top:calc(env(safe-area-inset-top) + 14px);right:14px;z-index:10;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:10px 16px;background:rgba(255,255,255,.22);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.45);box-shadow:0 4px 14px rgba(0,0,0,.18)}
     body.debug .hotspot{background:rgba(255,0,0,.22);outline:2px solid rgba(255,0,0,.65)}
     .loading{position:absolute;bottom:28px;left:0;right:0;text-align:center;color:#fff;text-shadow:0 2px 8px #000;font-size:14px;opacity:.85}
   </style>
@@ -45,6 +50,7 @@
 
     <section id="videoScreen" class="screen" aria-label="Vídeo do convite">
       <video id="videoPlayer" src="assets/video.mp4" preload="metadata" playsinline webkit-playsinline></video>
+      <button class="skip" id="skipBtn" type="button">Pular vídeo</button>
     </section>
 
     <section id="mainScreen" class="screen" aria-label="Convite principal">
@@ -98,8 +104,14 @@
       try { await video.play(); } catch(e) { show('mainScreen'); }
     }, {once:true});
 
-    video.addEventListener('ended', ()=> show('mainScreen'));
-    video.addEventListener('error', ()=> show('mainScreen'));
+    function goMain(){
+      video.pause();
+      show('mainScreen');
+    }
+
+    video.addEventListener('ended', goMain);
+    video.addEventListener('error', goMain);
+    $('skipBtn').addEventListener('click', goMain);
 
     $('confirmBtn').addEventListener('click', ()=>{
       window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MESSAGE)}`, '_blank');
